@@ -22,17 +22,21 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+
 	  
-	  <plugin>
-	  <artifactId>maven-antrun-plugin</artifactId>
-  <version>3.0.0</version>
-  <packaging>maven-plugin</packaging>	
-	  </plugin>
-	  
+	
     </plugins>
   </build>
   <dependencies>
-  	
+
+
+	<dependency>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-antrun-plugin</artifactId>
+  <version>3.0.0</version>
+  <type>maven-plugin</type>
+	</dependency>  
+	
   	<dependency>
   		<groupId>org.postgresql</groupId>
   		<artifactId>postgresql</artifactId>
